@@ -5,6 +5,9 @@ on:
     # Run every week on Monday at 00:00 UTC
     - cron: '0 0 * * 1'
   workflow_dispatch:
+  push:
+    branches:  # DEBUG
+      - copilot/create-github-workflow-syntax-update
 
 jobs:
   update-syntax:
